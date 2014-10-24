@@ -61,6 +61,5 @@ class Parser
     end
 
     columne_arre
-
   end
 end

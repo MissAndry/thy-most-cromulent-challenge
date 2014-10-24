@@ -1,0 +1,10 @@
+<div class="container">
+  <% if @insult %>
+    <h1><%= @insult.text %></h1>
+  <% end %>
+
+  <a id="generate" class="button-link" href="/generate-insult">Generate!</a>
+
+  <div id="send-button"></div>
+
+</div>
