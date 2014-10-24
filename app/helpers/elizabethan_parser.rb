@@ -8,7 +8,6 @@ class Pangloss
     @url = url
     @nokoified = nokoify
     @parsed = parsed
-    @insult_arr = insult_arr
   end
 
   def mass_of_insults
@@ -25,20 +24,7 @@ class Pangloss
     File.write('shakespearean-insults.txt', mass_of_insults.join("\n"))
   end
 
-  def generate_insult
-    insults = []
-    until insults.length == 3
-      insults << @insult_arr.sample
-      insults.uniq!
-    end
-    return "Thou #{insults.join(" ")}!"
-  end
-
   private
-
-  def insult_arr
-    @insult_arr ||= mass_of_insults
-  end
 
   def parsed
     @parsed ||= URI.parse(url)

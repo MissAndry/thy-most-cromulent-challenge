@@ -1,6 +1,5 @@
 require 'twilio-ruby'
-
-require_relative 'elizabethan_parser'
+require_relative 'read_insults'
 
 
 class SendSMS
@@ -12,12 +11,11 @@ class SendSMS
   end
 # Get your Account Sid and Auth Token from twilio.com/user/account
 
-
   def send_sms
     begin
     @client = Twilio::REST::Client.new @account_sid, @auth_token
      
-    message = @client.account.messages.create(:body => shakes_insult,
+    message = @client.account.messages.create(:body => @shakes_insult,
         :to => "+15106849426",     # Replace with your phone number
         :from => "+14152026709")   # Replace with your Twilio number
     rescue Twilio::REST::RequestError => e
