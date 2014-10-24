@@ -20,6 +20,8 @@ gem 'shotgun'
 
 gem 'nokogiri'
 
+gem 'twilio-ruby'
+
 group :test do
   gem 'faker'
   gem 'rspec'
