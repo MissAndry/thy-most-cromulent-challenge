@@ -9,6 +9,7 @@ $(document).ready(function() {
       success: function(response){
         console.log("ding!");
         $("#send-form").html(response);
+        $("#instructions").hide();
       }
     });
   });

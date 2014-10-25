@@ -1,7 +1,8 @@
 <% if @insult %>
-  <h1><%= @insult.text %></h1>
+  <h1 class="insult"><%= @insult.text %></h1>
 <% end %>
 
-<form id="send" class="button-link" action="/send-insult/<%= @insult.id %>" method="post">
-  <input type="submit" value="Send">  
+<form id="send" action="/send-insult/<%= @insult.id %>" method="post">
+  <input type="submit" value="Send!">  
 </form>
+<p>Unhappy with that one?</p?
