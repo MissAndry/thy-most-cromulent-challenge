@@ -1,0 +1,82 @@
+html {
+  background: url("../images/inside-the-globe-theater-courtesy-globe-lib.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+body {
+  color: rgba(250, 250, 265, 0.9);
+}
+
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  font-family: "Julee", sans-serif;
+}
+
+header {
+  background-color: rgba(65, 65, 65, 0.5);
+  font-family: "Calligraffitti", sans-serif;
+}
+
+header h1 {
+}
+
+header h1, h4 {
+  text-align: center;
+}
+
+a, a:visited, a:hover{
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+}
+
+.button-link {
+  background: #ccfa99;
+  padding: 10px;
+  border-left: 2px solid #9dc;
+  border-top: 2px solid #9dc;
+  border-right: 2px solid #66cc99;
+  border-bottom: 2px solid #66cc99;
+  border-radius: 2px;
+  float: left;
+  display: inline-block;
+}
+
+#send {
+  border-radius: 2px;
+  float: left;
+  display: inline-block;
+}
+
+.insult {
+  background-color: rgba(265, 265, 240, 0.5);
+  padding: 20px;
+  color: #444;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(265, 265, 240, 0.5);
+  padding: 12px;
+  float: left;
+  display: inline;
+  margin-top: 0;
+}
+
+input[type="submit"] {
+  background-color: #99e766;
+  border-left: 2px solid #9dc;
+  border-top: 2px solid #9dc;
+  border-right: 2px solid #66cc99;
+  border-bottom: 2px solid #66cc99;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+}
