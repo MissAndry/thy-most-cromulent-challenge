@@ -24,6 +24,8 @@ gem 'twilio-ruby'
 
 gem 'rspec'
 
+gem 'rails'
+
 group :test do
   gem 'faker'
 end
