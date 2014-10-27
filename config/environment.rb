@@ -25,7 +25,7 @@ APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 APP_NAME = APP_ROOT.basename.to_s
 
-ENV['AUTH_TOKEN'] = ''
+ENV['AUTH_TOKEN'] = '29328316fd631b86dc710fc3528ec883'
 
 # Set up the controllers and helpers
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
