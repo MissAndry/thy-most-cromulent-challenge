@@ -33,10 +33,9 @@ body {
 }
 
 .header h1 {
-  /*padding-top: 2%;*/
   font-size: 40px;
   margin-bottom: 0;
-  margin-left: 25%;
+  margin-left: 27.5%;
   float: left;
   width: 300px;
 }
@@ -56,7 +55,7 @@ body {
   text-decoration: none; 
   float: right;
   height: inherit;
-  width: 150px; 
+  width: 130px; 
   overflow: hidden; 
   margin-top: 50px;
 }
