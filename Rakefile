@@ -7,6 +7,11 @@ require ::File.expand_path('../config/environment', __FILE__)
 # Include all of ActiveSupport's core class extensions, e.g., String#camelize
 require 'active_support/core_ext'
 
+require 'sinatra/asset_pipeline/task'
+require './app'
+
+Sinatra::AssetPipeline::Task.define! App
+
 namespace :generate do
   desc "Create an empty model in app/models, e.g., rake generate:model NAME=User"
   task :model do

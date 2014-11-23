@@ -26,6 +26,8 @@ gem 'rspec'
 
 gem 'rails'
 
+gem 'sinatra-asset-pipeline'
+
 group :test do
   gem 'faker'
 end
