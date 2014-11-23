@@ -12,11 +12,27 @@
   <title></title>
 </head>
 <header>
-  <h1>Ye Olde Dickhead</h1>
-  <a class="twilio" href="https://www.twilio.com/">powered by Twilio™</a>
-  <h4>O, these deliberate fools! When they do choose, they have the wisdom by their wit to lose</h4>
 </header>
 <body>
-  <%= yield %>
+  <div class="container">
+    <div class="header">
+      <h1>Ye Olde Dickhead</h1>
+        <div class="twilio">
+          <div class="twilio-link-picture">
+            <a href="https://www.twilio.com/">
+              <img class="twilio-logo" src="../images/Twilio_logo_black.png" />
+            </a>
+          </div>
+          <div class="twilio-link-text">
+            <a href="https://www.twilio.com/">
+              powered by 
+            </a>
+          </div>
+        </div>
+
+      <!-- <h5>O, these deliberate fools! When they do choose, they have the wisdom by their wit to lose</h5> -->
+    </div>
+    <%= yield %>
+  </div>
 </body>
 </html>

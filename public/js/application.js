@@ -9,7 +9,9 @@ $(document).ready(function() {
       success: function(response){
         console.log("ding!");
         $("#send-form").html(response);
-        $("#instructions").hide();
+        $(".instructions").hide();
+        $(".generate").css({"margin-right": "37%"});
+        $(".generate").text("Try again?");
       }
     });
   });

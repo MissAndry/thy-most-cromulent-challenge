@@ -12,73 +12,140 @@ body {
 }
 
 .container {
-  margin: 20px auto;
+  margin:  8% auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
   font-family: "Julee", sans-serif;
+  background-color: rgba(200, 200, 200, 0.6);
+  /*border-bottom-left-radius: 5px;*/
+  /*border-bottom-right-radius: 5px;*/
+  border-radius: 15px;
+  overflow: auto;
+  
 }
 
-header {
-  background-color: rgba(65, 65, 65, 0.5);
+.header {
+  color: rgba(65, 65, 65, 1);
   font-family: "Calligraffitti", sans-serif;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-header h1 {
-  padding-top: 10px;
+.header h1 {
+  /*padding-top: 2%;*/
   font-size: 40px;
+  margin-bottom: 0;
+  margin-left: 25%;
+  float: left;
+  width: 300px;
 }
 
-header h1, h4 {
+.header h1, h5 {
   text-align: center;
 }
 
+.header h5 {
+  margin-top: 2px;
+  padding: 0 5px;
+  clear: both;
+  margin-bottom: 15px;
+}
+
+.twilio {
+  text-decoration: none; 
+  float: right;
+  height: inherit;
+  width: 150px; 
+  overflow: hidden; 
+  margin-top: 50px;
+}
+
+.twilio-link-text {
+  vertical-align: top;
+  text-align: right;
+  font-size: 14px;
+  float: right;
+}
+
+.twilio-logo{
+  width: 35%;
+  opacity: 0.75;
+  float: right;
+  padding-left: 5px;
+  margin-right: 0;
+}
+
+th {
+  text-align: left;
+}
+
 a, a:visited, a:hover{
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(65, 65, 65, 1);
   text-decoration: none;
 }
 
-.button-link {
+.generate {
+  text-align: center;
+  margin: 0 44% 0 0;
   background: #ccfa99;
-  padding: 10px;
+  float: right;
+}
+
+.button-link {
+  padding: 5px 10px;
   border-left: 2px solid #9dc;
   border-top: 2px solid #9dc;
   border-right: 2px solid #66cc99;
   border-bottom: 2px solid #66cc99;
-  border-radius: 2px;
-  float: left;
-  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Calligraffitti", sans-serif;
 }
 
 #send {
   border-radius: 2px;
+  margin: 0 0 0 34%;
   float: left;
-  display: inline-block;
 }
+
+.instructions {
+  margin: 0 auto 15px;
+  width: 60%;
+  text-align: center;
+}
+
 
 .insult {
   background-color: rgba(265, 265, 240, 0.5);
-  padding: 20px;
+  padding: 15px;
+  margin: 0 auto 15px;
   color: #444;
+  text-align: center;
+  border-radius: 5px;
 }
 
 p {
   color: rgba(0, 0, 0, 0.9);
   background-color: rgba(265, 265, 240, 0.5);
   padding: 12px;
-  float: left;
-  display: inline;
-  margin-top: 0;
+  border-radius: 5px;
 }
 
 input[type="submit"] {
   background-color: #99e766;
+  font-size: 16px;
+  color: rgba(65, 65, 65, 1);
+  /*border: none;*/
   border-left: 2px solid #9dc;
   border-top: 2px solid #9dc;
   border-right: 2px solid #66cc99;
   border-bottom: 2px solid #66cc99;
-  border-radius: 2px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
   outline: none;
+  font-family: "Calligraffitti", sans-serif;
+
 }
 
 .button-link:active, input[type="submit"]:active {
@@ -88,18 +155,3 @@ input[type="submit"] {
   border-top: 2px solid #66cc99;
 }
 
-.twilio {
-  background: url(https://www.twilio.com/packages/company/img/logos_icon_poweredbysmall.png) no-repeat;
-  text-decoration: none; 
-  display: inline-block; 
-  width: 166px; 
-  height: 0; 
-  overflow: hidden; 
-  padding-top: 31px; 
-  position: fixed;
-  right: 0;
-}
-
-th {
-  text-align: left;
-}
