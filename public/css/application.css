@@ -1,0 +1,156 @@
+html {
+  background: url("../images/inside-the-globe-theater-courtesy-globe-lib.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+body {
+  color: rgba(250, 250, 265, 0.9);
+  font-size: 20px;
+}
+
+.container {
+  margin:  8% auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  font-family: "Julee", sans-serif;
+  background-color: rgba(200, 200, 200, 0.6);
+  /*border-bottom-left-radius: 5px;*/
+  /*border-bottom-right-radius: 5px;*/
+  border-radius: 15px;
+  overflow: auto;
+  
+}
+
+.header {
+  color: rgba(65, 65, 65, 1);
+  font-family: "Calligraffitti", sans-serif;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-left: 27.5%;
+  float: left;
+  width: 300px;
+}
+
+.header h1, h5 {
+  text-align: center;
+}
+
+.header h5 {
+  margin-top: 2px;
+  padding: 0 5px;
+  clear: both;
+  margin-bottom: 15px;
+}
+
+.twilio {
+  text-decoration: none; 
+  float: right;
+  height: inherit;
+  width: 130px; 
+  overflow: hidden; 
+  margin-top: 50px;
+}
+
+.twilio-link-text {
+  vertical-align: top;
+  text-align: right;
+  font-size: 14px;
+  float: right;
+}
+
+.twilio-logo{
+  width: 35%;
+  opacity: 0.75;
+  float: right;
+  padding-left: 5px;
+  margin-right: 0;
+}
+
+th {
+  text-align: left;
+}
+
+a, a:visited, a:hover{
+  color: rgba(65, 65, 65, 1);
+  text-decoration: none;
+}
+
+.generate {
+  text-align: center;
+  margin: 0 44% 0 0;
+  background: #ccfa99;
+  float: right;
+}
+
+.button-link {
+  padding: 5px 10px;
+  border-left: 2px solid #9dc;
+  border-top: 2px solid #9dc;
+  border-right: 2px solid #66cc99;
+  border-bottom: 2px solid #66cc99;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Calligraffitti", sans-serif;
+}
+
+#send {
+  border-radius: 2px;
+  margin: 0 0 0 34%;
+  float: left;
+}
+
+.instructions {
+  margin: 0 auto 15px;
+  width: 60%;
+  text-align: center;
+}
+
+
+.insult {
+  background-color: rgba(265, 265, 240, 0.5);
+  padding: 15px;
+  margin: 0 auto 15px;
+  color: #444;
+  text-align: center;
+  border-radius: 5px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(265, 265, 240, 0.5);
+  padding: 12px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #99e766;
+  font-size: 16px;
+  color: rgba(65, 65, 65, 1);
+  /*border: none;*/
+  border-left: 2px solid #9dc;
+  border-top: 2px solid #9dc;
+  border-right: 2px solid #66cc99;
+  border-bottom: 2px solid #66cc99;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  font-family: "Calligraffitti", sans-serif;
+
+}
+
+.button-link:active, input[type="submit"]:active {
+  border-right: 2px solid #9dc;
+  border-bottom: 2px solid #9dc;
+  border-left: 2px solid #66cc99;
+  border-top: 2px solid #66cc99;
+}
+
