@@ -12,13 +12,11 @@ body {
 }
 
 .container {
-  margin:  8% auto;
-  width: 600px;
+  margin: 8% auto;
+  width: 700px;
   padding: 0px 20px 20px 20px;
   font-family: "Julee", sans-serif;
   background-color: rgba(200, 200, 200, 0.6);
-  /*border-bottom-left-radius: 5px;*/
-  /*border-bottom-right-radius: 5px;*/
   border-radius: 15px;
   overflow: auto;
   
@@ -33,11 +31,11 @@ body {
 }
 
 .header h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 0;
-  margin-left: 27.5%;
+  margin-left: 20.5%;
   float: left;
-  width: 300px;
+  width: 60%;
 }
 
 .header h1, h5 {
@@ -57,18 +55,18 @@ body {
   height: inherit;
   width: 130px; 
   overflow: hidden; 
-  margin-top: 50px;
+  margin-top: 67px;
 }
 
 .twilio-text {
   vertical-align: top;
   text-align: right;
-  font-size: 14px;
+  font-size: 16px;
   float: right;
 }
 
-.twilio-logo{
-  width: 35%;
+.twilio-logo {
+  width: 40%;
   opacity: 0.75;
   float: right;
   padding-left: 5px;
@@ -98,22 +96,15 @@ a, a:visited, a:hover{
   border-right: 2px solid #66cc99;
   border-bottom: 2px solid #66cc99;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Calligraffitti", sans-serif;
 }
 
 #send {
   border-radius: 2px;
-  margin: 0 0 0 34%;
+  margin: 0 0 0 38%;
   float: left;
 }
-
-.instructions {
-  margin: 0 auto 15px;
-  width: 60%;
-  text-align: center;
-}
-
 
 .insult {
   background-color: rgba(265, 265, 240, 0.5);
@@ -124,16 +115,19 @@ a, a:visited, a:hover{
   border-radius: 5px;
 }
 
-p {
+.instructions {
   color: rgba(0, 0, 0, 0.9);
   background-color: rgba(265, 265, 240, 0.5);
   padding: 12px;
   border-radius: 5px;
+  width: 70%;
+  margin: 0 auto 15px;
+  text-align: center;
 }
 
 input[type="submit"] {
   background-color: #99e766;
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(65, 65, 65, 1);
   /*border: none;*/
   border-left: 2px solid #9dc;
