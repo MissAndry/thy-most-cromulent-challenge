@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("a").on("click", function(event){
+  $("#first-insult").on("click", function(event){
     event.preventDefault();
 
     $.ajax({
