@@ -129,7 +129,6 @@ input[type="submit"] {
   background-color: #99e766;
   font-size: 18px;
   color: rgba(65, 65, 65, 1);
-  /*border: none;*/
   border-left: 2px solid #9dc;
   border-top: 2px solid #9dc;
   border-right: 2px solid #66cc99;
@@ -146,5 +145,15 @@ input[type="submit"] {
   border-bottom: 2px solid #9dc;
   border-left: 2px solid #66cc99;
   border-top: 2px solid #66cc99;
+}
+
+#phone-number {
+  margin: 0 auto;
+  width: 400px;
+}
+
+
+.insult-generator{
+  width: 100%;
 }
 

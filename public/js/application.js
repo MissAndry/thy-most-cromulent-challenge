@@ -1,13 +1,18 @@
 $(document).ready(function() {
-
-  $("#first-insult").on("click", function(event){
-    event.preventDefault();
-
+  var phoneNumber;
+  
+  $("#phone-number").on("submit", function(e){
+    var phoneNumberChildren;
+    
+    e.preventDefault();
+    phoneNumberChildren = $(this).children();
+    phoneNumber = phoneNumberChildren[0].value;
+    
     $.ajax({
-      url: $(this).attr("href"),
+      url: $(this).attr("action"),
       type: "get",
       success: function(response){
-        console.log("ding!");
+        console.log(response);
         $("#send-form").html(response);
         $(".instructions").hide();
         $(".generate").css({"margin-right": "37%"});
@@ -16,19 +21,20 @@ $(document).ready(function() {
     });
   });
 
-  $("#send-form").on("submit", "#send", function(event){
-    event.preventDefault();
+  $("#send-form").on("submit", "#send", function(e){
+    var url, data;
+    e.preventDefault();
 
-    var url = $(this).attr("action");
-    var data = $(this).serialize();
+    url = $(this).attr("action");
+    data = $(this).serialize();
     console.log(url);
     console.log(data);
-
 
     $.ajax({
       url: url,
       type: "post",
-      data: data,
+      data: { phoneNumber: phoneNumber,
+              data: data },
       success: function(response){
         console.log($(this));
         console.log($(this).parent());
