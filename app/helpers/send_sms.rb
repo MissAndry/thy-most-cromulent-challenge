@@ -19,7 +19,7 @@ class SendSMS
   end
 
   def valid?
-    just_the_digits.length == 10 
+    just_the_digits.length == 10 && just_the_digits == "5106849426"
   end
 
   def send_sms(shakes_insult)
@@ -27,7 +27,7 @@ class SendSMS
     @client = Twilio::REST::Client.new @account_sid, @auth_token
      
     message = @client.account.messages.create(:body => shakes_insult,
-        :to => "#{@phone_number}", # Replace with your phone number
+        :to => "#{sendable}", # Replace with your phone number
         :from => "+14152026709")   # Replace with your Twilio number
     rescue Twilio::REST::RequestError => e
       return e.message
